@@ -1,0 +1,35 @@
+.services.services-container
+  width: 100%
+  background: #F6F5F5
+  text-align: center
+  padding: 90px 0px 110px 0px
+  @include h2-style
+.services.grid-container
+  margin-top: 100px
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(240px, 240px))
+  grid-auto-rows: auto
+  grid-gap: 40px
+  justify-content: center
+  padding: 30px
+  .card
+    background: white
+    width: 100%
+    height: 210px
+    text-align: center
+    padding: 5px
+    transition: 0.6s
+    cursor: pointer
+    &:hover
+      box-shadow: 0px -1px 12px 0px rgba(135,140,173,1)
+      transition: 0.3s
+    h3
+      font-size: 18px
+      font-weight: 400
+    p
+      color: $second-color
+      font-size: 16px
+      line-height: 27px
+.fa-desktop
+  font-size: 25px!important
+  padding: 20px

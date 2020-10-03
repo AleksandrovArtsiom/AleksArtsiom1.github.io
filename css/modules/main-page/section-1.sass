@@ -1,0 +1,71 @@
+.about-us.grid-container
+  display: grid 
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr))
+  padding: 40px 30px 40px 30px
+  grid-gap: 20px
+  max-width: 1200px
+  margin: auto
+.about-us.description
+  line-height: 27px
+  color: black
+  margin-top: 75px
+  width: 85%
+  margin: auto
+  h3
+    @include h3-style
+  p
+    font-size: 16px
+    color: #364D59
+    margin-bottom: 10px
+
+  button
+    padding: 14px 50px
+    background: #01D28E
+    border-radius: 30px
+    border: #01D28E
+    a
+      text-decoration: none
+      color: white
+      font-size: 15px
+      font-weight: 700
+.about-us.img
+  width: 85%
+  background-image: url("../images/dekstop.jpg")
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  height: 450px
+  margin: auto
+
+.about-us.skills
+  line-height: 27px
+  color: black
+  margin-top: 75px
+  width: 85%
+  margin: auto
+  h3
+    @include h3-style
+  span
+    font-size: 16px
+    color: #364d59
+.about-us.flex-container
+  display: flex
+  span
+    &:last-child
+      margin-left: 10px
+.progress-bar-1
+  @include bar-style
+  div
+    width: 90%
+.progress-bar-2
+  @include bar-style
+  div
+    width: 70%
+.progress-bar-3
+  @include bar-style
+  div
+    width: 90%
+.progress-bar-4
+  @include bar-style
+  div
+    width: 80%

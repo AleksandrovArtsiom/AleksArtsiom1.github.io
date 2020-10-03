@@ -1,0 +1,118 @@
+<html>
+<title>Contact</title>
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale = 1">
+  <link href="https://fonts.googleapis.com/css?family=Muli:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libraries/jquery.fancybox.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/71bf2fefa7.js" crossorigin="anonymous"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="header hero-image">
+      <nav class="d-flex justify-content-between">
+        <div class="logo">
+          <a href="index.html">Agencia.</a>
+        </div>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Work</a></li>
+          <li><a href="">Journal</a></li>
+          <li><a href="">Contact</a></li>
+          <span class="close-icon"><i class="fas fa-times"></i></span>
+        </ul>
+      </nav>
+      <div class="header text-container">
+        <h1>Contact Us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           Soluta veritatis in tenetur doloremque, maiores doloribus officia iste.
+           Dolores.</p>
+      </div>
+    </div>
+
+  </header>
+
+<div class="contact contact-container">
+  <div class="contact form-container">
+    <form action="" class="contact form">
+      <input type="text" placeholder="First name">
+      <input type="text" placeholder = "Last name">
+      <input type="text" placeholder="Email address">
+      <textarea id="subject" name="subject" placeholder="Write your message."></textarea>
+    </form>
+    <button>Send Message</button>
+    </div>
+    <div class="contact contact-info">
+      <h3>Contact Info</h3>
+      <span>Address: <br> </span>
+      <span>34 Street Name, City Name Here,  United States <br></span>
+      <span>Phone: <br></span>
+      <span>+1 242 4942 290 <br></span>
+      <span>Email: <br></span>
+      <span>info@yourdomain.com</span>
+    </div>
+</div>
+
+<footer>
+  <div class="footer grid-container">
+    <div class="footer links-container">
+      <h2>About Me</h2>
+      <p>Far far away, behind the word mountains, far from the countries Vokalia
+         and Consonantia, there live the blind texts</p>
+    </div>
+    <div class="footer links-container">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Testimonials</a></li>
+        <li><a href="">Terms of Service</a></li>
+        <li><a href="">Privacy</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer links-container">
+      <h2>Connect</h2>
+      <div class="footer social">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+      </div>
+      <h2>Newsletter</h2>
+      <div class="footer newsletter">
+        <input type="text" placeholder="Email">
+        <button>Send</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    $(document).ready(function() {
+      $(".burger").click(function() {
+        $('.nav-links').toggleClass('active');
+      });
+    });
+    $(".close-icon").click(function() {
+      $(".nav-links").toggleClass("active");
+    });
+  </script>

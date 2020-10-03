@@ -1,0 +1,73 @@
+footer
+  padding: 100px 0px 100px 0px
+  background: #EFEFEF
+.footer.grid-container
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+  max-width: 1260px
+  margin: auto
+  grid-gap: 40px
+.footer.links-container
+  padding-left: 20px
+  width: 100%
+  ul
+    padding: 0px
+    margin: 0px
+    li
+      list-style: none
+      a
+        display: block
+        text-decoration: none
+        color: $main-color
+        line-height: 32px
+        font-size: 16px
+        font-weight: 600
+        font-family: "Muli", sans-serif
+  h2
+    font-size: 16px
+    font-family: "Muli", sans-serif
+    font-weight: 400
+  p
+    font-size: 16px
+    line-height: 27px
+    color: $second-color
+    font-family: "Muli", sans-serif
+  .footer.social
+    display: flex
+    a
+      display: block
+      height: 50px
+      width: 50px
+      background: #F2F2F2
+      border-radius: 50%
+      position: relative
+      margin: 3px
+      transition: 0.3s
+      &:hover
+        background: white
+        transition: 0.3s
+      i
+        color: $main-color
+        @include centering
+        top: 50%
+        font-weight: 600
+.footer.newsletter
+  display: flex
+  input
+    width: 250px
+    height: 45px
+    border-radius: 2px
+    border: 1px solid #ccc
+    padding: 5px
+    outline: none
+    font-family: "Muli", sans-serif
+    font-size: 16px
+    transition: 0.3s
+    &:hover
+      border: 1px solid black
+      transition: 0.3s
+  button
+    @include btn-style
+    height: 45px
+    width: 90px
+    margin: 0px 0px 0px 5px

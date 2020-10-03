@@ -1,0 +1,71 @@
+.contact.contact-container
+  padding: 100px 0px 100px 0px
+  display: grid
+  max-width: 1260px
+  margin: auto
+  grid-template-columns: repeat(12,1fr)
+.contact.form-container
+  grid-column: span 7
+  button
+    @include btn-style
+    height: 55px
+    width: 200px
+    font-size: 15px
+.contact.contact-info
+  grid-column: span 5
+  padding: 50px
+  h3
+    font-size: 28px
+    font-family: "Muli", sans-serif
+    line-height: 33px
+    font-weight: 400
+  span
+    line-height: 33px
+    font-size: 16px
+  span:nth-child(3)
+    color: #364d59
+  span:nth-child(5)
+    color: #364d59
+  span:nth-child(7)
+    color: #364d59
+.contact.form
+  text-align: center
+  display: grid
+  grid-template-columns: repeat(12,1fr)
+  input
+    width: 95%
+    height: 45px
+    border-radius: 2px
+    border: 1px solid #ccc
+    padding: 15px
+    outline: none
+    font-family: "Muli", sans-serif
+    font-size: 16px
+    transition: 0.3s
+    margin: 10px
+    &:hover
+      border: 1px solid black
+      transition: 0.3s
+  input:nth-child(1)
+    grid-column: span 6
+  input:nth-child(2)
+    grid-column: span 6
+  input:nth-child(3)
+    grid-column: span 12
+    width: 97.5%
+  textarea
+    grid-column: span 12
+    width: 97.5%
+    height: 250px
+    margin: 10px 10px 10px 10px
+    border: 1px solid #ccc
+    border-radius: 4px
+    font-size: 16px
+    padding: 15px
+    outline: none
+    transition: 0.3s
+    &:active
+      outline: none
+    &:hover
+      border: 1px solid black
+      transition: 0.3s

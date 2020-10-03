@@ -1,0 +1,39 @@
+.gallery.gallery-container
+  text-align: center
+  padding: 100px 0px 100px 0px
+  @include h2-style
+.gallery.grid-container
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr))
+  grid-gap: 30px
+  margin: 0 auto 30px
+  max-width: 1160px
+  margin-top: 50px
+  padding: 30px
+  .gallery.image
+    overflow: hidden
+    position: relative
+    max-height: 100%
+    &:hover
+      .overlay
+        opacity: 0.5
+      img
+        transform: scale(1.1)
+        transition: 0.3s ease
+    img 
+      border-radius: 5px
+      overflow: hidden
+      width: 100%
+      transition: 0.3s ease
+.overlay
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  height: 100%
+  width: 100%
+  opacity: 0
+  transition: 0.5s ease
+  background-color: black
+  cursor: pointer
